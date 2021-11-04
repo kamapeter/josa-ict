@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap.css"/> 
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    * {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    }
+    .form-group label{
+      font-weight: 530;
+    }
+    .text-muted{font-weight: 100;}
+    h1,h2,h3,h4,h5,h6{
+      font-weight: 900;
+    }
+    .navbar-j{
+      background-color: #f2faff;
+      border-bottom: 2px #044e7d solid; 
+    }
+    .text-j,.text-j a{
+      color: #044e7d;
+    }
+    .fa-bars{
+      font-size: 35px;
+    }
+    .main{
+      position: relative;
+    }
+   .bg-image{
+    position: relative;
+    min-height: 200px;
+    overflow: hidden;
+    }
+    .mask{
+      background-image: linear-gradient(to bottom, rgba(0,0,0,.25),rgba(0,0,0,0.65));
+      position: absolute;
+      top: 0;
+      overflow: hidden;
+    }
+    .sicon{
+      font-size: 3em;  
+      color: #044e7d;
+    }
+    a:hover i{
+      color: #df9f1f;
+    }
+    a:visited i{
+      color: #bdafe5;
+    }
+    @media (min-width: 728px){
+      .navbar-nav{
+        width: 300px;
+      }
+    }
+    h2{
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-decoration-color: #bdafe5;
+      text-decoration-thickness: 5px;
+      text-underline-position: under;
+    }
+    .logo{
+      animation: slide 1s ease-in .5s  1 normal forwards;
+    }
+    @keyframes slide{
+      50%{transform: translateX(100px)}
+      100%{transform: translateX(0)}
+    }
+    </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md  text-j navbar-j" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="imgs/logo.png" alt="" width="90px" height="50px"/>
+        </a>
+        <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-j" id="navbarTogglerDemo02">
+          <ul class="navbar-nav nav-pills ms-auto  text-j">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-bs-smooth-scroll="smooth-scroll">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="bg-image w-100 h-100">
+      <img src="imgs/cover.jpg" class="w-100"/>
+      <div class="mask w-100 h-100">
+        <div class="carousel-caption text-end ms-4">
+          <h1>JOSA ICT</h1>
+          <p>Solutions and Consultancy</p>
+        </div>
+      </div>
+    </div>
+    <section  class="main container" >
+      <div class="row gy-3 my-3">
+        <div class="text-center col-12 w-100">
+          <h2 id="services">Our Services</h2>
+        </div>
+        <div class="container-fluid">
+        <div class="row row-cols-md-2 row-cols-lg-4">
+        <div class="col my-3">
+          <div class="card">
+            <img
+              src="imgs/software.jpg"
+              alt="..."
+              height="200px"
+              width="220px"
+              class="mx-auto my-3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Software Development</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the
+                card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col my-3">
+          <div class="card">
+            <img
+              src="imgs/hardware.png"
+              alt="..."
+              height="200px"
+              width="220px"
+              class="mx-auto my-3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Hardware Installations</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the
+                card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col my-3">
+          <div class="card">
+            <img
+              src="imgs/contract.png"
+              alt="..."
+              height="200px"
+              width="220px"
+              class="m-3 mx-auto"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">General Contracts </h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the
+                card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col my-3">
+          <div class="card">
+            <img
+              src="imgs/poster.svg"
+              alt="..."
+              height="200px"
+              class="m-3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Graphic Design</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the
+                card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-2 g-3 my-3">
+        <div class="col-12 w-100 text-center">
+          <h2 id="contact" class="blue-underline">Contact Us</h2>
+          <p>
+            cursus dissentiunt postea suscipit prompta maiestatis. molestiae eripuit quaerendum tristique homero torquent amet eget blandit gubergren. vim mollis repudiare mentitum cetero altera suas elementum omittam montes. 
+          </p>
+          <h5>We would love to hear from you</h5>
+          
+        </div>
+        <div class="col-md-5">   
+        <div class="card border-primary">
+            <h5 class="text-center mt-3">Get a quote</h5>
+          <div class="card-body">
+            <form class="g-4" id="serviceform" novalidate>
+              
+              <div class="form-group my-3">
+                <label for="name1">Full Name</label>
+                <input type="text" id="name1" class="form-control" name="name" value="" placholder="Name" required/>
+              </div>
+              <div class="form-group my-3">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Enter email" required/>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group my-3">
+                <label for="name1">Subject</label>
+                <input type="text" id="subject1" class="form-control" name="subject" placholder="Subject" required/>
+                <div class="invalid-feedback">
+                  make sure subject is more than 3 words
+                </div>
+              </div>
+              <div class="form-group my-3">
+                <label for="textarea1">Message</label>
+                <textarea class="form-control" name="message"
+                id="textarea1" rows="3"required></textarea>
+                <div class="invalid-feedback">
+                  make sure message is more than 20 words
+                </div>
+              </div>
+              <button type="submit"class="btn btn-primary my-2" id="btn">
+                Submit
+              </button>
+            </form>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-7 m--3">
+        <h3 class="text-center mt-5">Or Contact Us Via Other Platforms:</h3>
+        <div class="d-flex justify-content-center container g-4 flex-row">
+          <div>
+            <div class="rounded-circle d-inline-block  m-5">
+              <a href="facebook.com">
+                <i class="fa fa-facebook sicon"></i> 
+              </a>
+            </div>
+            <div class="rounded-circle d-inline-block  m-5">
+              <a href="https://www.instagram.com/jerry_omo1/">
+                <i class="fa fa-instagram sicon"></i>
+              </a>
+            </div>
+            <div class="rounded-circle d-inline-block  m-5">
+              <a href="mailto: josarenaissance@gmail.com">
+                <i class="fa fa-google sicon"></i>
+              </a>
+            </div>
+            <div class="rounded-circle d-inline-block  m-5">
+              <a href="tel: +2348182801974">
+                <i class="fa fa-phone sicon"></i>
+              </a>
+            </div>
+            <div class="rounded-circle d-inline-block  m-5">
+              <a href="https://wa.me/message/TX7S72EKGEF3K1">
+                <i class="fa fa-whatsapp sicon"></i>
+              </a>
+            </div>
+            <div class="rounded-circle d-inline-block  m-5">
+              <a href="twitter.com">
+                <i class="fa fa-twitter sicon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-2 g-3 my-3">
+        <div class="col-12 w-100 text-center">
+          <h2 id="about">About Us</h2>
+        </div>
+        <div class="col col-md-5">
+          <img class="img-fluid" src="imgs/about.jpg" alt="" />
+        </div>
+        <div class="col col-md-7 gy-3">
+          <p>
+            Evertituretiam dolore mus dolorum adipisci nam graeco vero adhuc gloriatur referrentur graeco luctus nonumy saperet omnesque.  Veroconstituto amet dicam vehicula interesset epicurei comprehensam maluisset.
+          </p>
+          <p>
+          Sociissociosqu comprehensam viverra necessitatibus fabulas eleifend quod eu alia menandri class id dictum.  Nominaviintellegat necessitatibus dolores esse purus ad quot.  Quasfeugait vituperata habeo tale primis parturient detraxit dolorum.  Usuidque viris consequat montes.
+          </p>
+        </div>
+      </div>
+      </div>
+      
+      </div>
+    </section>
+    <footer class="text-center text-white" style="background-color: #a1acbd;">
+      
+  <div class="container pt-4">
+    
+    <section class="mb-4">
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa fa-facebook-f"></i
+      ></a>
+
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa fa-twitter"></i
+      ></a>
+
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="mailto: josarenaissance@gmail.com"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa fa-google"></i
+      ></a>
+
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://www.instagram.com/jerry_omo1/"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa fa-instagram"></i
+      ></a>
+
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://wa.me/message/TX7S72EKGEF3K1"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa fa-whatsapp"></i
+      ></a>
+      
+    </section>
+  </div>
+
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-dark" href="#">josaict.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+    <script src="bootstrap.bundle.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+
+  (function (){
+    
+    var form = document.querySelector('#serviceform');
+    
+    form.addEventListener('submit',submitHandle,false)
+    var btn = document.querySelector('#btn')
+    
+    function submitHandle(e){
+      e.preventDefault();
+      const form = e.target,
+            isFieldValid = function (field,min){
+              words = field.replace(/(^\s*)|(\s*$)/i,"");
+              
+              words = words.replace(/[ ]{2,}/gi," ");
+              
+              words = words.replace(/\n /,"\n");
+              return words.split(' ').filter(function(str){return str!="";}).length >= min
+            }
+      if(form.checkValidity() == true){
+        var msgElem = form.elements.message,
+            sbjElem = form.elements.subject,
+            name = form.elements.name.value,
+            email = form.elements.email.value;
+        msgElem.className = isFieldValid(msgElem.value,20)? 'form-control': 'form-control is-invalid';
+        sbjElem.className = isFieldValid(sbjElem.value,3)? 'form-control': 'form-control is-invalid';
+        var body = `${msgElem.value} \r\n by ${name}. \r\n email:  ${email}`;
+        if (form.querySelector('.is-invalid')){
+          form.classList.remove('was-validated');
+        }
+        
+        else
+          window.open(`mailto:josarenaissance@gmail.com?subject=${sbjElem.value}&body=${body}`);
+      }   
+    }
+  })();
+  </script>
+</body>
+</html>
